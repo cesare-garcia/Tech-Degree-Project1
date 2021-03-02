@@ -11,7 +11,71 @@ project 1 - A Random Quote Generator
  * `quotes` array 
 ***/
 
+// Note: I have created an array with 10 objects that will store my quotes, sources, citations, and years.
+let quotes = [
+  {
+    quote: "",
+    source: "",
+    citation: "",
+    year: 
+  },
+  {
+    quote: "",
+    source: "", 
+    citation: "",
+    year:
+  },
+  {
+    quote: "",
+    source: "", 
+    citation: "",
+    year:
+  },
+  {
+    quote: "",
+    source: "", 
+    citation: "",
+    year:
+  },
+  {
+    quote: "",
+    source: "", 
+    citation: "",
+    year:
+  },
+  {
+    quote: "",
+    source: "", 
+    citation: "",
+    year:
+  },
+  {
+    quote: "",
+    source: "", 
+    citation: "",
+    year:
+  },
+  {
+    quote: "",
+    source: "", 
+    citation: "",
+    year:
+  },
+  {
+    quote: "",
+    source: "", 
+    citation: "",
+    year:
+  },
+  {
+    quote: "",
+    source: "", 
+    citation: "",
+    year:
+  }
+];
 
+console.log(quotes);
 
 /***
  * `getRandomQuote` function

@@ -14,40 +14,40 @@ project 1 - A Random Quote Generator
 // Note: I have created an array with 10 objects that will store my quotes, sources, citations, and years.
 let quotes = [
   {
-    quote: "",
-    source: "",
-    citation: "",
-    year: 
+    quote: "Far better it is to dare mighty things, to win glorious triumphs, even though checkered by failure, than to take rank with those poor spirits who neither enjoy much nor suffer much, because they live in the gray twilight that knows not victory nor defeat.",
+    source: "President Theodore Roosevelt",
+    citation: "The Strenuous Life",
+    year: 1899
   },
   {
-    quote: "",
-    source: "", 
-    citation: "",
-    year:
+    quote: "We have always held to the hope, the belief, the conviction that there is a better life, a better world, beyond the horizon.",
+    source: "President Franklin Roosevelt", 
+    citation: "Address on Hemispheric Defense",
+    year: 1940
   },
   {
-    quote: "",
-    source: "", 
-    citation: "",
-    year:
+    quote: "Don’t ever let somebody tell you you can’t do something, not even me. Alright? You dream, you gotta protect it. People can’t do something themselves, they wanna tell you you can’t do it. If you want something, go get it. Period.",
+    source: "Chris Gardner", 
+    citation: "The Pursuit of Happyness",
+    year: 2006
   },
   {
-    quote: "",
-    source: "", 
-    citation: "",
-    year:
+    quote: "Many things are formidable, but none are more formidable than man.",
+    source: "Sophocles", 
+    citation: "Ode to Man in Antigone",
+    year: "441 BC"
   },
   {
-    quote: "",
-    source: "", 
-    citation: "",
-    year:
+    quote: "Life's not about how hard of a hit you can give... it's about how many you can take, and still keep moving forward.",
+    source: "Rocky", 
+    citation: "Rocky Balboa",
+    year: 2006
   },
   {
-    quote: "",
-    source: "", 
-    citation: "",
-    year:
+    quote: "The people who are crazy enough to think that they can change the world, are the ones who do.",
+    source: "Steve Jobs", 
+    citation: "Apple's Think Different Campaign",
+    year: 1997
   },
   {
     quote: "",
@@ -81,11 +81,28 @@ console.log(quotes);
  * `getRandomQuote` function
 ***/
 
+//Note: This function will use a random number that will then be matched with a quote. 
 
+function getRandomQuote() {
+
+  console.log();
+
+
+
+
+}
+
+getRandomQuote();
 
 /***
  * `printQuote` function
 ***/
+
+function printQuote() {
+
+
+
+}
 
 
 

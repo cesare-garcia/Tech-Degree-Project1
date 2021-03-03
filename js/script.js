@@ -48,30 +48,6 @@ let quotes = [
     source: "Steve Jobs", 
     citation: "Apple's Think Different Campaign",
     year: 1997
-  },
-  {
-    quote: "",
-    source: "", 
-    citation: "",
-    year:
-  },
-  {
-    quote: "",
-    source: "", 
-    citation: "",
-    year:
-  },
-  {
-    quote: "",
-    source: "", 
-    citation: "",
-    year:
-  },
-  {
-    quote: "",
-    source: "", 
-    citation: "",
-    year:
   }
 ];
 

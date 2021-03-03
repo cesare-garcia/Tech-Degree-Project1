@@ -11,7 +11,8 @@ project 1 - A Random Quote Generator
  * `quotes` array 
 ***/
 
-// Note: I have created an array with 6 objects that will store my quotes, sources, citations, and years.
+/* Cesar's Note: I have created an array with 6 objects that will store my quotes, sources, citations, and years.
+*/
 let quotes = [
   {
     quote: "Far better it is to dare mighty things, to win glorious triumphs, even though checkered by failure, than to take rank with those poor spirits who neither enjoy much nor suffer much, because they live in the gray twilight that knows not victory nor defeat.",
@@ -57,19 +58,20 @@ console.log(quotes);
  * `getRandomQuote` function
 ***/
 
-//Note: This function will use a random number that will then be matched with a quote. 
+/*Cesar's note: This function will accept my quotes array, then set the quoteNumber variable to a number between
+  0 and 5 (0 inclusive). This number will then be used to indicate the index of the object in the array. I will then use
+  dot notation to return the quote property of the indicated object in the array. 
+*/
 
 let quoteNumber = 0;
 
-function getRandomQuote() {
+function getRandomQuote(quotearray) {
   quoteNumber = Math.floor(Math.random()*6);
-  while ( quoteNumber == 6 ) {
-    quoteNumber = Math.floor(Math.random()*6);
-  }
-  return quoteNumber;
+  console.log(quoteNumber);
+  return quotearray[quoteNumber].quote;
 }
 
-getRandomQuote();
+getRandomQuote(quotes);
 
 /***
  * `printQuote` function

@@ -59,25 +59,28 @@ console.log(quotes);
 ***/
 
 /*Cesar's note: This function will accept my quotes array, then set the quoteNumber variable to a number between
-  0 and 5 (0 inclusive). This number will then be used to indicate the index of the object in the array. I will then use
-  dot notation to return the quote property of the indicated object in the array. 
+  0 and 5 (0 inclusive). This number will then be used as the index of the array in order to return an object.
 */
 
 let quoteNumber = 0;
 
 function getRandomQuote(quotearray) {
   quoteNumber = Math.floor(Math.random()*6);
-  console.log(quoteNumber);
-  return quotearray[quoteNumber].quote;
+  //console.log(quoteNumber);
+  return quotearray[quoteNumber];
 }
 
-getRandomQuote(quotes);
+//getRandomQuote(quotes);
 
 /***
  * `printQuote` function
 ***/
+let random_quote = '';
+let print_html = '';
 
 function printQuote() {
+  random_quote = getRandomQuote();
+  print_html = `<p>${random_quote[quote]} -${random_quote[source]}</p>`;
 
 
 

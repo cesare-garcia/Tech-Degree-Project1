@@ -81,8 +81,8 @@ function getRandomQuote(quotearray) {
  * `printQuote` function
 ***/
 /* Cesar's Note: This function calls the getRandomQuote(quotes) function. I have declared two empty variables outside of the 
-function. I used template literals and += to add snippets of code to the html_print variable. At the end of the 
-function, I return html_print.
+function. I used template literals and += to add snippets of code to the html_print variable. I am also calling the changeBodyColor() function
+to change the color of the page every time printQuote executes. At the end of the function, I return html_print.
 */ 
 
 let quote_object;
@@ -106,7 +106,7 @@ function printQuote() {
   }
   html_print += `
     </p>`;
-  //changeBodyColor();
+  changeBodyColor();
 
   return document.getElementById('quote-box').innerHTML = html_print;
 }
@@ -120,13 +120,16 @@ setInterval( printQuote , 20000 );
 
 
 /* Cesar's Note: Creating a function to change the background color of the body each time a new quote appears. 
+I received help from Zviel and Unbreakable_D on Slack for this part of the project. I created a variable that was equal to
+document.querySelector('body'). Then, I interpolated Math.random() into a template literal that changed the rgb values
+of body every time that the printQuote() function executes. 
 */
 
-/* function changeBodyColor() {
+ function changeBodyColor() {
   let body_color = document.querySelector('body');
-  body_color.style["background-color"] = rgb( Math.floor(Math.random()*255), Math.floor(Math.random()*255), Math.floor(Math.random()*255)
+  body_color.style["backgroundColor"] = `rgb( ${Math.random()*256}, ${Math.random()*256}, ${Math.random()*265})`;
 }
-*/
+
 
 /***
  * click event listener for the print quote button

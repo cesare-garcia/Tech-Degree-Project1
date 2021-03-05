@@ -11,7 +11,7 @@ project 1 - A Random Quote Generator
  * `quotes` array 
 ***/
 
-/* Cesar's Note: I have created an array with 6 objects that will store my quotes, sources, citations, and years.
+/* Cesar's Note: I have created an array with 6 objects that will store my quotes, sources, citations, and years etc.
 */
 let quotes = [
   {
@@ -58,7 +58,7 @@ let quotes = [
   }
 ];
 
-console.log(quotes);
+//console.log(quotes);
 
 /***
  * `getRandomQuote` function
@@ -70,21 +70,18 @@ console.log(quotes);
 
 let quoteNumber = 0;
 
-
 function getRandomQuote(quotearray) {
   quoteNumber = Math.floor(Math.random()*6);
   //console.log(quoteNumber);
   return quotearray[quoteNumber];
 }
 
-//getRandomQuote(quotes);
-
 /***
  * `printQuote` function
 ***/
-/* Cesar's Note: I am declaring the variables outside of the function (need to check if this is necessary). Inside the function
-I am calling the getRandomQuote function to return an object from the quotes array. I am then concatenating object pieces to the
-print_html variable, so that I may return it and write it to the website.
+/* Cesar's Note: This function calls the getRandomQuote(quotes) function. I have declared two empty variables outside of the 
+function. I used template literals and += to add snippets of code to the html_print variable. At the end of the 
+function, I return html_print.
 */ 
 
 let quote_object;
@@ -92,10 +89,8 @@ let html_print;
 
 function printQuote() {
   quote_object = getRandomQuote(quotes);
-  html_print= `
-    <p class="quote"> ${quote_object.quote} </p>
-    <p class="source"> ${quote_object.source}`;
-  //console.log(html_print);
+  html_print= `<p class="quote"> ${quote_object.quote} </p>
+  <p class="source"> ${quote_object.source}`;
   if ( quote_object.citation ) {
     html_print += `
       <span class="citation"> ${quote_object.citation} </span>`;
@@ -104,12 +99,11 @@ function printQuote() {
     html_print += `
       <span class="year"> ${quote_object.year} </span>`;
   }
-  html_print += `</p>`;
-
-  console.log(html_print);
-  
+  html_print += `
+    </p>`;
+  //console.log(html_print);
+  return document.getElementById('quote-box').innerHTML = html_print;
 }
-
 
 /***
  * click event listener for the print quote button

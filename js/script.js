@@ -106,8 +106,11 @@ function printQuote() {
   }
   html_print += `
     </p>`;
+  changeBodyColor();
+
   return document.getElementById('quote-box').innerHTML = html_print;
 }
+
 
 /* Cesar's Note: Now, I'm going to use setInterval() to call my printQuote function every 20 seconds. This will change 
 the quote in the box even if nobody clicks the button. 
@@ -115,6 +118,14 @@ the quote in the box even if nobody clicks the button.
 
 setInterval( printQuote , 20000 );
 
+
+/* Cesar's Note: Creating a function to change the background color of the body each time a new quote appears. 
+*/
+
+function changeBodyColor() {
+  let body_color = document.querySelector('body');
+  body_color.style["background-color"] = rgb( Math.floor(Math.random()*255), Math.floor(Math.random()*255), Math.floor(Math.random()*255)
+}
 
 
 /***

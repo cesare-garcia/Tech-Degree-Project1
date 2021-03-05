@@ -106,7 +106,7 @@ function printQuote() {
   }
   html_print += `
     </p>`;
-  changeBodyColor();
+  //changeBodyColor();
 
   return document.getElementById('quote-box').innerHTML = html_print;
 }

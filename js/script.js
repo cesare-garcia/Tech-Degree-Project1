@@ -12,6 +12,8 @@ project 1 - A Random Quote Generator
 ***/
 
 /* Cesar's Note: I have created an array with 6 objects that will store my quotes, sources, citations, and years etc.
+
+I am shooting for Exceeds Expectations!
 */
 let quotes = [
   {
@@ -72,7 +74,6 @@ let quoteNumber = 0;
 
 function getRandomQuote(quotearray) {
   quoteNumber = Math.floor(Math.random()*6);
-  //console.log(quoteNumber);
   return quotearray[quoteNumber];
 }
 
@@ -99,11 +100,22 @@ function printQuote() {
     html_print += `
       <span class="year"> ${quote_object.year} </span>`;
   }
+  if ( quote_object.tags ) {
+    html_print += `
+      <span class="tags">, ${quote_object.tags} </span>`;
+  }
   html_print += `
     </p>`;
-  //console.log(html_print);
   return document.getElementById('quote-box').innerHTML = html_print;
 }
+
+/* Cesar's Note: Now, I'm going to use setInterval() to call my printQuote function every 20 seconds. This will change 
+the quote in the box even if nobody clicks the button. 
+*/
+
+setInterval( printQuote , 20000 );
+
+
 
 /***
  * click event listener for the print quote button

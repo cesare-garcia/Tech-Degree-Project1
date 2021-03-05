@@ -128,7 +128,7 @@ of body every time that the printQuote() function executes.
 
  function changeBodyColor() {
   let body_color = document.querySelector('body');
-  body_color.style["backgroundColor"] = `rgb( ${Math.random()*256}, ${Math.random()*256}, ${Math.random()*265})`;
+  body_color.style["backgroundColor"] = `rgb( ${Math.random()*256}, ${Math.random()*256}, ${Math.random()*256})`;
 }
 
 

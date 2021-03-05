@@ -120,7 +120,8 @@ setInterval( printQuote , 20000 );
 
 
 /* Cesar's Note: Creating a function to change the background color of the body each time a new quote appears. 
-I received help from Zviel and Unbreakable_D on Slack for this part of the project. I created a variable that was equal to
+I received help from Zviel and Unbreakable_D on Slack for this part of the project. I did not code the function the exact way
+that they recommended though. I created a variable that was equal to
 document.querySelector('body'). Then, I interpolated Math.random() into a template literal that changed the rgb values
 of body every time that the printQuote() function executes. 
 */

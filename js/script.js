@@ -122,11 +122,11 @@ setInterval( printQuote , 20000 );
 /* Cesar's Note: Creating a function to change the background color of the body each time a new quote appears. 
 */
 
-function changeBodyColor() {
+/* function changeBodyColor() {
   let body_color = document.querySelector('body');
   body_color.style["background-color"] = rgb( Math.floor(Math.random()*255), Math.floor(Math.random()*255), Math.floor(Math.random()*255)
 }
-
+*/
 
 /***
  * click event listener for the print quote button
